@@ -1,0 +1,81 @@
+/*hide table borders*/
+entry-content table > thead > tr > th, 
+.entry-content table > tbody > tr > th, 
+.entry-content table > tfoot > tr > th, 
+.entry-content table > thead > tr > td, 
+.entry-content table > tbody > tr > td, 
+.entry-content table > tfoot > tr > td {
+    border: 0px;
+}
+
+/*center content area*/
+.content-area {
+width: 80% !important;
+max-width: 80% !important;
+margin: 0 auto !important;
+float: none !important;
+}
+.entry .entry-content > *, 
+.entry .entry-summary > * {
+    max-width: none;
+}
+
+/*color the site header*/
+.site-header {
+	background-color: #55ddff;
+}
+/*not sure if this actually works*/
+.main-navigation-container {
+	max-width: none !important;
+}
+
+/*modify each item in the navigation menu*/
+.menu-item {
+	background-color: #55ddff;
+  border: none;
+  padding: 15px 31px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+/*format the links into a circle*/
+.circle-container-outer {
+	position: relative;
+	width: 30em;
+	height: 30em;
+	padding: 0em;
+	/*2.8em = 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2))*/
+	border: dashed 1px;
+	border-radius: 50%;
+}
+.circle-container {
+	position: relative;
+	width: 20em;
+	height: 20em;
+	padding: 0em;
+	/*2.8em = 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2))*/
+	border: dashed 1px;
+	border-radius: 50%;
+	margin: 4.75em auto 0;
+}
+.circle-container a {
+	display: block;
+	position: absolute;
+	top: 50%; left: 50%;
+	width: 4em; height: 4em;
+	margin: -2em;
+}
+.circle-container img { display: block; width: 100%; }
+
+/*cover each angle*/
+.deg0 { transform: translate(12em); white-space: nowrap; text-align: center;} /* 12em = half the width of the wrapper */
+.deg45 { transform: rotate(45deg) translate(12em) rotate(-45deg); }
+.deg90 { transform: rotate(90deg) translate(12em) rotate(-90deg); }
+.deg135 { transform: rotate(135deg) translate(12em) rotate(-135deg); }
+.deg180 { transform: translate(-12em); }
+.deg225 { transform: rotate(225deg) translate(12em) rotate(-225deg); }
+.deg270 { transform: rotate(270deg) translate(12em) rotate(-270deg); }
+.deg315 { transform: rotate(315deg) translate(12em) rotate(-315deg); }
+.text {text-align: center;}
