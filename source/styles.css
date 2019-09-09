@@ -8,10 +8,40 @@ entry-content table > thead > tr > th,
     border: 0px;
 }
 
+.no-border {
+	border:0px;
+}
+
+/*adjust header elements*/
+.main-navigation {
+	padding-top:10px;
+}
+
+.site-title {
+	font-family:"Georgia", serif;
+	font-weight:bold;
+	font-size:3.5vw;
+}
+
+/*configure layout of descriptions for links*/
+.link-description-cell {
+	white-space:nowrap;
+}
+
+.link-description-div {
+	margin:25px;
+	padding-bottom: 25px;
+	border-bottom:1px;
+}
+
+.link-description {
+	border-top: 1px solid;
+}
+
 /*center content area*/
 .content-area {
-width: 80% !important;
-max-width: 80% !important;
+width: 100% !important;
+max-width: 100% !important;
 margin: 0 auto !important;
 float: none !important;
 }
@@ -31,13 +61,18 @@ float: none !important;
 
 /*modify each item in the navigation menu*/
 .menu-item {
-	background-color: #55ddff;
-  border: none;
+	background-color: #191960;
+  border: 1px solid;
   padding: 15px 31px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+	border-radius:7.5%;
+}
+.menu-item-has-children {
+	background-color: #55ddff;
+	border:0px;
 }
 
 /*format the links into a circle*/
@@ -47,18 +82,19 @@ float: none !important;
 	height: 30em;
 	padding: 0em;
 	/*2.8em = 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2))*/
-	border: dashed 1px;
+	border: solid 1px;
 	border-radius: 50%;
+	background-color:white;
 }
 .circle-container {
 	position: relative;
-	width: 20em;
-	height: 20em;
+	width: 15em;
+	height: 15em;
 	padding: 0em;
-	/*2.8em = 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2))*/
 	border: dashed 1px;
 	border-radius: 50%;
-	margin: 4.75em auto 0;
+	margin: 7.25em auto 0;
+	background-color:white;
 }
 .circle-container a {
 	display: block;
@@ -70,12 +106,45 @@ float: none !important;
 .circle-container img { display: block; width: 100%; }
 
 /*cover each angle*/
-.deg0 { transform: translate(12em); white-space: nowrap; text-align: center;} /* 12em = half the width of the wrapper */
-.deg45 { transform: rotate(45deg) translate(12em) rotate(-45deg); }
-.deg90 { transform: rotate(90deg) translate(12em) rotate(-90deg); }
-.deg135 { transform: rotate(135deg) translate(12em) rotate(-135deg); }
-.deg180 { transform: translate(-12em); }
-.deg225 { transform: rotate(225deg) translate(12em) rotate(-225deg); }
-.deg270 { transform: rotate(270deg) translate(12em) rotate(-270deg); }
-.deg315 { transform: rotate(315deg) translate(12em) rotate(-315deg); }
+.deg0 { 
+	transform: translate(11em);
+	white-space: pre; 
+	text-align: justify;} 
+
+.deg45 { 
+	transform: rotate(45deg) translate(11em) rotate(-45deg);
+	white-space: pre;
+	padding:20px;
+}
+
+.deg90 { 
+	transform: rotate(90deg) translate(11em) rotate(-90deg);
+	padding:20px;
+	text-align: center;
+}
+
+.deg135 { transform: rotate(135deg) translate(11em) rotate(-135deg);
+	padding:20px;
+}
+
+.deg180 { 
+	transform: translate(-11em);
+	padding:20px;
+	text-align: justify;
+}
+
+.deg225 { transform: rotate(225deg) translate(11em) rotate(-225deg); 
+	padding:30px;
+	white-space:pre;
+}
+
+.deg270 { transform: rotate(270deg) translate(11em) rotate(-270deg); 
+	padding:25px;
+	white-space:pre;
+}
+
+.deg315 { transform: rotate(315deg) translate(11em) rotate(-315deg); 
+	padding:30px;
+	white-space:pre;}
+
 .text {text-align: center;}
