@@ -25,13 +25,18 @@ entry-content table > thead > tr > th,
 
 /*configure layout of descriptions for links*/
 .link-description-cell {
-	white-space:nowrap;
+	white-space:normal;
 }
 
 .link-description-div {
 	margin:25px;
-	padding-bottom: 25px;
+	padding-bottom:25px;
+	padding-top:10px;
+	padding-left:10px;
+	padding-right:10px;
 	border-bottom:1px;
+	border:1px dashed;
+	width:17.5vw;
 }
 
 .link-description {
@@ -63,7 +68,7 @@ float: none !important;
 .menu-item {
 	background-color: #191960;
   border: 1px solid;
-  padding: 15px 31px;
+  padding: 17px 22px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -71,7 +76,7 @@ float: none !important;
 	border-radius:7.5%;
 }
 .menu-item-has-children {
-	background-color: #55ddff;
+	background-color:#0000;
 	border:0px;
 }
 
@@ -109,7 +114,8 @@ float: none !important;
 .deg0 { 
 	transform: translate(11em);
 	white-space: pre; 
-	text-align: justify;} 
+	text-align: justify;
+} 
 
 .deg45 { 
 	transform: rotate(45deg) translate(11em) rotate(-45deg);
@@ -119,7 +125,7 @@ float: none !important;
 
 .deg90 { 
 	transform: rotate(90deg) translate(11em) rotate(-90deg);
-	padding:20px;
+	white-space:pre;
 	text-align: center;
 }
 
