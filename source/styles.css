@@ -18,7 +18,7 @@ entry-content table > thead > tr > th,
 }
 
 .site-title {
-	font-family:"Georgia", serif;
+	font-family:"Calibri";
 	font-weight:bold;
 	font-size:3.5vw;
 }
@@ -37,6 +37,7 @@ entry-content table > thead > tr > th,
 	border-bottom:1px;
 	border:1px dashed;
 	width:17.5vw;
+	background-color:whitesmoke;
 }
 
 .link-description {
@@ -59,6 +60,15 @@ float: none !important;
 .site-header {
 	background-color: #55ddff;
 }
+
+.site-content {
+	background-color:#09576b;
+}
+
+.site-footer {
+	background-color:#09576b;
+}
+
 /*not sure if this actually works*/
 .main-navigation-container {
 	max-width: none !important;
@@ -89,7 +99,8 @@ float: none !important;
 	/*2.8em = 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2))*/
 	border: solid 1px;
 	border-radius: 50%;
-	background-color:white;
+	background-color:#fafaff;
+  list-style: none;
 }
 .circle-container {
 	position: relative;
@@ -99,7 +110,7 @@ float: none !important;
 	border: dashed 1px;
 	border-radius: 50%;
 	margin: 7.25em auto 0;
-	background-color:white;
+	background-color:#09576b;
 }
 .circle-container a {
 	display: block;
@@ -154,3 +165,70 @@ float: none !important;
 	white-space:pre;}
 
 .text {text-align: center;}
+
+/*highlight portion of circle when hovered over*/
+.slice {
+  overflow: hidden;
+  position: absolute;
+  top: 0; right: 0;
+  width: 50%; height: 50%;
+  transform-origin: 0% 100%; 
+}
+.slice:first-child {
+  transform: rotate(22.5deg) skewY(-45deg);
+}
+.slice:nth-child(2) {
+  transform: rotate(67.5deg) skewY(-45deg);
+}
+.slice:nth-child(3) {
+  transform: rotate(112.5deg) skewY(-45deg);
+}
+.slice:nth-child(4) {
+  transform: rotate(157.5deg) skewY(-45deg);
+}
+.slice:nth-child(5) {
+  transform: rotate(202.5deg) skewY(-45deg);
+}
+.slice:nth-child(6) {
+  transform: rotate(247.5deg) skewY(-45deg);
+}
+.slice:nth-child(7) {
+  transform: rotate(292.5deg) skewY(-45deg);
+}
+.slice:nth-child(8) {
+  transform: rotate(337.5deg) skewY(-45deg);
+}
+
+.slice:first-child .slice-contents{
+  transform: skewY(45deg);
+}
+
+.slice:nth-child(2) .slice-contents{
+  transform: skewY(45deg);
+}
+.slice:nth-child(3) .slice-contents{
+  transform: skewY(45deg);
+}
+.slice:nth-child(4) .slice-contents{
+  transform: skewY(45deg);
+}
+.slice:nth-child(5) .slice-contents{
+  transform: skewY(45deg);
+}
+.slice:nth-child(6) .slice-contents{
+  transform: skewY(45deg);
+}
+.slice:nth-child(7) .slice-contents{
+  transform:skewY(45deg);
+}
+.slice:nth-child(8) .slice-contents{
+  transform: skewY(45deg);
+}
+.slice-contents {
+  position: absolute;
+  left: -100%;
+  width: 200%; height: 200%;
+  border-radius: 50%;
+  background: whitesmoke;
+}
+.slice:hover .slice-contents { background: lightblue; } /* highlight on hover */
