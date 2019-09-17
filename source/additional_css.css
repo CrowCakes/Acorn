@@ -1,0 +1,308 @@
+
+
+
+/*hide table borders*/
+entry-content table > thead > tr > th, 
+.entry-content table > tbody > tr > th, 
+.entry-content table > tfoot > tr > th, 
+.entry-content table > thead > tr > td, 
+.entry-content table > tbody > tr > td, 
+.entry-content table > tfoot > tr > td {
+    border: 0px;
+}
+
+.no-border {
+	border:0px;
+}
+
+/*adjust header elements*/
+.main-navigation {
+	padding-top:15px;
+}
+
+.site-title {
+	font-family:"Verdana";
+	font-weight:bold;
+	font-size:3.5vw;
+}
+
+
+.site-title a:hover, .site-title a:visited{
+   color: #6b95a0;
+
+}
+
+li#menu-item-364 a {
+    margin-right: 10px;
+}
+
+form.is-search-form.is-form-style.is-form-style-3.is-form-id-195 {
+    float: right;
+    padding: 90px 29px 10px 0px;
+    position: relative;
+    z-index: 999999999999;
+}
+
+/*
+input.is-search-input{
+    opacity: 0.6;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-family: "calibri";
+}
+*/
+
+input.is-search-input::placeholder {
+    opacity: 0.4;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: "calibri";
+}
+
+
+/*configure layout of descriptions for links*/
+.link-description-cell {
+	white-space:normal;
+}
+
+.link-description-div {
+    margin: 25px;
+    padding-bottom: 25px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 1px;
+    border: 1px dashed #95959599;
+    width: 17.5vw;
+    background-color: #fbfbfb;
+}
+
+.link-description {
+    border-top: 1px solid #b3b3b3;
+    font-size: 14px;
+    color: #817c7c;
+    text-align: justify;
+    word-break: break-word;
+}
+
+
+/*
+input.search-field {
+    font-size: 12px;
+    border-radius: 6px;
+}
+*/
+
+
+
+/*center content area*/
+.content-area {
+width: 100% !important;
+max-width: 100% !important;
+margin: 0 auto !important;
+float: none !important;
+}
+.entry .entry-content > *, 
+.entry .entry-summary > * {
+    max-width: none;
+}
+
+/*color the site header*/
+.site-header {
+    background-color: #fafcfc;
+    border-bottom: 0.7px solid #94969629;
+    box-shadow: 0px 20px #ffffff;
+}
+
+.site-content {
+	background-color:#cdd9dd17;
+}
+
+.site-footer {
+    background-color: #6b95a0;
+}
+
+/*not sure if this actually works*/
+.main-navigation-container {
+	max-width: none !important;
+}
+
+.main-navigation .main-menu > li > a {
+    font-weight: 700;
+    color: #818587;
+    margin-right: 0.5rem;
+}
+
+/*modify each item in the navigation menu*/
+.menu-item {
+    background-color: #fafafa;
+    border: 1px solid #d2d2d2;
+    padding: 15px 10px 15px 21px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    font-family: monospace;
+    border-radius: 7.5%;
+}
+.menu-item-has-children {
+	background-color:#0000;
+	border:0px;
+}
+
+.menu-item:hover {
+    border: 2px solid #91b2bb;
+}
+
+    
+/*format the links into a circle*/
+.circle-container-outer {
+    position: relative;
+    width: 30em;
+    height: 30em;
+    padding: 0em;
+    border: dotted 2px #fefefe;
+    border-radius: 50%;
+    background-color: #6b95a07d;
+    list-style: none;
+	/*2.8em = 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2))*/
+}
+.circle-container {
+    position: relative;
+    width: 10em;
+    height: 10em;
+    padding: 0em;
+    border: solid 2px #d6e2e8;
+    border-radius: 50%;
+    margin: 9.75em auto 0;
+    background-color: #6b95a0;
+}
+.circle-container a {
+	display: block;
+	position: absolute;
+	top: 50%; left: 50%;
+	width: 4em; height: 4em;
+	margin: -2em;
+    color: #817c7c;
+}
+
+.circle-container a:hover{color: #56838f}
+
+.circle-container img { display: block; width: 100%; }
+
+.main-navigation .sub-menu > li > a{color: #7f8486;}
+
+.main-navigation .sub-menu > li > a:hover{background: #fafafa;}
+
+/*cover each angle*/
+.deg0 { 
+	transform: translate(11em);
+	white-space: pre; 
+	text-align: justify;
+} 
+
+.deg45 { 
+	transform: rotate(45deg) translate(11em) rotate(-45deg);
+	white-space: pre;
+	padding:20px;
+}
+
+.deg90 { 
+	transform: rotate(90deg) translate(11em) rotate(-90deg);
+	white-space:pre;
+	text-align: center;
+}
+
+.deg135 { transform: rotate(135deg) translate(11em) rotate(-135deg);
+	padding:20px;
+}
+
+.deg180 { 
+	transform: translate(-11em);
+	padding:20px;
+	text-align: justify;
+}
+
+.deg225 { transform: rotate(225deg) translate(11em) rotate(-225deg); 
+	padding:30px;
+	white-space:pre;
+}
+
+.deg270 { transform: rotate(270deg) translate(11em) rotate(-270deg); 
+	padding:25px;
+	white-space:pre;
+}
+
+.deg315 { transform: rotate(315deg) translate(11em) rotate(-315deg); 
+	padding:30px;
+	white-space:pre;}
+
+.text {text-align: center;}
+
+/*highlight portion of circle when hovered over*/
+.slice {
+  overflow: hidden;
+  position: absolute;
+  top: 0; right: 0;
+  width: 50%; height: 50%;
+  transform-origin: 0% 100%; 
+}
+.slice:first-child {
+  transform: rotate(22.5deg) skewY(-45deg);
+}
+.slice:nth-child(2) {
+  transform: rotate(67.5deg) skewY(-45deg);
+}
+.slice:nth-child(3) {
+  transform: rotate(112.5deg) skewY(-45deg);
+}
+.slice:nth-child(4) {
+  transform: rotate(157.5deg) skewY(-45deg);
+}
+.slice:nth-child(5) {
+  transform: rotate(202.5deg) skewY(-45deg);
+}
+.slice:nth-child(6) {
+  transform: rotate(247.5deg) skewY(-45deg);
+}
+.slice:nth-child(7) {
+  transform: rotate(292.5deg) skewY(-45deg);
+}
+.slice:nth-child(8) {
+  transform: rotate(337.5deg) skewY(-45deg);
+}
+
+.slice:first-child .slice-contents{
+  transform: skewY(45deg);
+}
+
+.slice:nth-child(2) .slice-contents{
+  transform: skewY(45deg);
+}
+.slice:nth-child(3) .slice-contents{
+  transform: skewY(45deg);
+}
+.slice:nth-child(4) .slice-contents{
+  transform: skewY(45deg);
+}
+.slice:nth-child(5) .slice-contents{
+  transform: skewY(45deg);
+}
+.slice:nth-child(6) .slice-contents{
+  transform: skewY(45deg);
+}
+.slice:nth-child(7) .slice-contents{
+  transform:skewY(45deg);
+}
+.slice:nth-child(8) .slice-contents{
+  transform: skewY(45deg);
+}
+.slice-contents {
+  position: absolute;
+  left: -100%;
+  width: 200%; height: 200%;
+  border-radius: 50%;
+  background: #f7f8f8;
+}
+.slice:hover .slice-contents { background: lightblue; } /* highlight on hover */
