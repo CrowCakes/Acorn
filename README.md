@@ -5,7 +5,7 @@ This document aims to explain what Acorn's files and codes do.
 
 ## Files
 Wordpress keeps the webpages in a MySQL database, but for redundancy's sake, 
-the edited files are saved in Acorn's GitHub repository at https://github.com/CrowCakes/Acorn
+edited theme files, as well as website content, are also saved in Acorn's GitHub repository at https://github.com/CrowCakes/Acorn
 
 styles.css is Wordpress's 2019 theme css, edited for some of the styles seen in the website.
 
