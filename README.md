@@ -3,7 +3,7 @@ This document aims to explain what Acorn's files and codes do.
 
 
 
-## Files
+###### Files
 Wordpress keeps the webpages in a MySQL database, but for redundancy's sake, 
 the edited files are saved in Acorn's GitHub repository at https://github.com/CrowCakes/Acorn
 
@@ -49,3 +49,9 @@ Padding was adjusted to ensure that the presentation of text within the circle w
 
 The links within the circle are defined under .degXXX, where XXX refers to the angle of rotation relative to the right radius of the circle.
 Padding and other text formatting is defined here, though some cases called for overriding these attributes within the html body.
+
+
+
+## Plugins
+Fullwidth Page Templates and Ivory Search were used to adjust the body content and the header search bar, respectively.
+FW Fullwidth was used as the page attribute for each webpage in the site. This allows the body content to stretch to the full width of the viewport.
