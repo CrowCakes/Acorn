@@ -3,7 +3,7 @@ This document aims to explain what Acorn's files and codes do.
 
 
 
-###### Files
+## Files
 Wordpress keeps the webpages in a MySQL database, but for redundancy's sake, 
 the edited files are saved in Acorn's GitHub repository at https://github.com/CrowCakes/Acorn
 
