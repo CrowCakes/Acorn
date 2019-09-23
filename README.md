@@ -3,7 +3,7 @@ This document aims to explain what Acorn's files and codes do.
 
 
 
-###### Files
+## Files
 Wordpress keeps the webpages in a MySQL database, but for redundancy's sake, 
 the edited files are saved in Acorn's GitHub repository at https://github.com/CrowCakes/Acorn
 
@@ -22,7 +22,7 @@ It can be removed to no impact on the website.
 
 
 
-###### HTML Body Structure
+## HTML Body Structure
 As Wordpress loads in the same header and footer for each webpage, the only concern for each individual webpage is the body content.
 Each page body contains a single div, containing a table with only 1 row of 3 cells holding the contents of the page.
 
@@ -37,7 +37,7 @@ With the help of css code, items in the unordered list change color when hovered
 
 
 
-###### CSS Content
+## CSS Content
 CSS classes referring to header and footer elements will not be explained here, as these can be found in Wordpress documentation.
 
 What will mainly be discussed here is code relating to the circular arrangement of website links in the body content of each webpage.
