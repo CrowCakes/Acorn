@@ -54,4 +54,7 @@ Padding and other text formatting is defined here, though some cases called for 
 
 ## Plugins
 Fullwidth Page Templates and Ivory Search were used to adjust the body content and the header search bar, respectively.
+
 FW Fullwidth was used as the page attribute for each webpage in the site. This allows the body content to stretch to the full width of the viewport.
+
+Normally, Ivory Search's search bar appears above the header, anchored to the left corner of the webpage. CSS code was used to put it to the right of the header navigation menu.
